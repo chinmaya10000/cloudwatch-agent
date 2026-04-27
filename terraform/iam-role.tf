@@ -29,7 +29,7 @@ resource "aws_iam_instance_profile" "ec2_profile" {
 }
 
 # Attach to Existing Instance
-resource "aws_iam_instance_profile_association" "my_instance" {
-  instance_id          = var.instance_id
-  iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
-}
+# resource "aws_iam_instance_profile_association" "my_instance" {
+#   instance_id          = var.instance_id
+#   iam_instance_profile = aws_iam_instance_profile.ec2_profile.name
+# }
