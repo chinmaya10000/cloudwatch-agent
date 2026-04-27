@@ -1,0 +1,6 @@
+---
+- name: Setup CloudWatch Agent
+  hosts: ec2
+  become: yes
+  tasks:
+  - name: Install CloudWatch Agent
